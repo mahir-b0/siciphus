@@ -20,6 +20,19 @@ const encrypt = (text, shift) => {
     }
 }
 
+const darkModeToggle = document.getElementById("darkmode-toggle");
+const title = document.querySelector("h1");
+
+darkModeToggle.addEventListener("change", () => {
+    if (darkModeToggle.checked) {
+        document.body.style.backgroundColor = "#242424";
+        title.style.color = "white";
+    } else {
+        document.body.style.backgroundColor = "";
+        title.style.color = "";
+    }
+});
+
 const decodeButton = document.getElementById("decode-btn");
 decodeButton.addEventListener('click', () => {
     const inputText = document.getElementById("decodedTextArea").value;
