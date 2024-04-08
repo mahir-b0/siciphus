@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Epson';
+    src: url('assets/EPSON-FUTO-MINCHO.eot');
+    src: url('assets/EPSON-FUTO-MINCHO.woff') format('woff'),
+         url('assets/epminbld.ttf') format('truetype'), 
+         url('assets/EPSON-FUTO-MINCHO.svg#EPSON-FUTO-MINCHO') format('svg'); 
+}
+
+#shift-value-box {
+    width: 150px;
+}
+
+* {
+    font-family: 'Epson';
+}
+
+.buttoon {
+    font-size: 18px;
+    font-weight: bold;
+    background: #1E90FF;
+    width: 160px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition-duration: 0.3s;
+    transition-property: box-shadow, transform;
+}
+
+.buttoon:hover, .buttoon:focus, .buttoon:active {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+}
